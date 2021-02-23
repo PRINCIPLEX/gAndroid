@@ -1,0 +1,195 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="OnePxActivityStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- 窗体背景颜色为透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 窗体没有边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 窗体不包含标题栏 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 窗体悬浮 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 自定义TitleBar时去掉多余的阴影-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 不允许窗体背景变暗-->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 窗体切换无动画-->
+        <item name="android:windowAnimationStyle">@null</item>
+        <!-- 禁用窗口的预览动画-->
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowNoDisplay">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+
+
+
+
+
+
+
+
+    <!-- settle_xml -->
+
+
+    <style name="CardItem">
+        <item name="android:paddingLeft">@dimen/spacing_major</item>
+        <item name="android:paddingRight">@dimen/spacing_major</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <!-- 适合文本可能有多行的item -->
+    <style name="CardItem.AutoHeight" parent="@style/CardItem">
+        <item name="android:paddingTop">15.0dip</item>
+        <item name="android:paddingBottom">15.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="Txt">
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Txt.Auxiliary" parent="@style/Txt">
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:textColor">@color/secondary_text</item>
+    </style>
+
+    <style name="Title" parent="@style/Txt">
+        <item name="android:textSize">@dimen/font_large</item>
+        <item name="android:textColor">@color/primary_text</item>
+    </style>
+
+
+    <style name="Title.Card" parent="@style/Title">
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">@dimen/spacing_minor</item>
+    </style>
+
+
+    <style name="Txt.Hint.Weighted" parent="@style/Txt.Hint">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+
+    <style name="Txt.EmphasizedHuge" parent="@style/Txt">
+        <item name="android:textSize">@dimen/font_larger</item>
+        <item name="android:textColor">@color/orange</item>
+    </style>
+
+    <style name="Txt.Hint" parent="@style/Txt">
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:textColor">@color/secondary_text</item>
+    </style>
+
+    <style name="Title.Card.Weighted" parent="@style/Title.Card">
+        <item name="android:layout_width">0.0dp</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="Widget.LazyOrder.Button" parent="Widget.AppCompat.Button">
+        <item name="android:paddingLeft">@dimen/spacing_micro</item>
+        <item name="android:paddingRight">@dimen/spacing_micro</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:textColor">@color/color_ffffff</item>
+        <item name="android:background">@drawable/selector_blue_corners_button</item>
+    </style>
+
+    <style name="Widget.LazyOrder.EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+
+    <!-- adapter_order_list -->
+
+    <style name="Card">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/spacing_major</item>
+    </style>
+
+
+
+
+    <style name="Txt.Emphasize" parent="@style/Txt">
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:textColor">#fffb4e44</item>
+    </style>
+
+    <style name="Txt.AuxiliaryInfo" parent="@style/Txt">
+        <item name="android:textSize">@dimen/font_smaller</item>
+        <item name="android:textColor">#ff656565</item>
+    </style>
+
+    <style name="Txt.Main" parent="@style/Txt">
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textColorHint">@color/secondary_text</item>
+    </style>
+
+
+    <!-- order_detail_show -->
+
+
+    <style name="Title.Card.WithPadding" parent="@style/Title.Card">
+        <item name="android:paddingLeft">@dimen/spacing_major</item>
+        <item name="android:paddingRight">@dimen/spacing_major</item>
+    </style>
+
+
+    <style name="Card.WithDivider" parent="@style/Card">
+        <item name="android:showDividers">middle</item>
+        <item name="android:dividerPadding">@dimen/spacing_major</item>
+    </style>
+
+    <style name="CardItem.FixedHeight" parent="@style/CardItem">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">@dimen/cell_normal</item>
+    </style>
+
+
+    <style name="Txt.Main.Weighted" parent="@style/Txt.Main">
+        <item name="android:layout_width">0.0dp</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+
+
+
+    <declare-styleable name="SectionItemView">
+        <attr name="siv_icon" format="reference" />
+        <attr name="siv_name" format="reference|string" />
+        <attr name="siv_indicator" format="boolean" />
+    </declare-styleable>
+
+
+
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/my_checkbox</item>
+    </style>
+
+    <style name="CustomCheckboxSmallTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/my_checkbox_small</item>
+    </style>
+
+</resources>

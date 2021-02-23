@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/dark_gray_bg"
+>
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView
+                android:text="¥120"
+                style="@style/Txt.EmphasizedHuge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:gravity="center" android:textSize="60sp"
+                android:id="@+id/tv_price"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/spacing_minor"
+                android:text="请选择支付方式"
+                android:textSize="@dimen/font_normal"
+                android:textColor="@color/primary_text"
+                android:background="@color/dark_gray_bg"
+        />
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/rg_payment">
+
+                    <RadioButton
+                            android:text="支付宝支付"
+                            android:textColor="@color/primary_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/radioButton2"
+                            style="@style/CustomCheckboxTheme"
+                            android:checked="true"
+                            android:textSize="30sp"/>
+                    <RadioButton
+                            style="@style/CustomCheckboxTheme"
+
+                            android:text="微信支付"
+                            android:textColor="@color/primary_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/radioButton" android:textSize="30sp"/>
+                    <RadioButton
+                            style="@style/CustomCheckboxTheme"
+
+                            android:text="校园卡支付"
+                            android:textColor="@color/primary_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/radioButton3"
+                            android:textSize="30sp"/>
+
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                          android:orientation="vertical">
+
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" app:srcCompat="@mipmap/payment_ali"
+                        android:id="@+id/imageView"
+                        android:layout_weight="1" android:layout_gravity="right"/>
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" app:srcCompat="@mipmap/payment_wechat"
+                        android:id="@+id/imageView2"
+                        android:layout_weight="1" android:layout_gravity="right"/>
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" app:srcCompat="@mipmap/payment_card"
+                        android:id="@+id/imageView3"
+                        android:layout_weight="1" android:layout_gravity="right"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="立即支付"
+                style="@style/Widget.LazyOrder.Button"
+        />
+    </LinearLayout>
+
+</LinearLayout>

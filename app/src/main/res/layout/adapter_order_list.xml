@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/view_content"
+              style="@style/Card"
+            >
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cell_normal"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/spacing_major"
+            android:paddingRight="@dimen/spacing_major"
+    >
+
+        <TextView
+                android:id="@+id/txt_business_name"
+                style="@style/Txt.Main"
+                android:drawablePadding="@dimen/spacing_micro"
+                android:text="中国石油大学咖啡馆"/>
+
+        <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+        />
+
+        <TextView
+                android:id="@+id/txt_order_status"
+                style="@style/Txt.Main"
+                android:text="已完成"/>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_size"
+            android:background="@color/divider"
+    />
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:layout_marginLeft="12.0dip"
+            android:orientation="vertical" android:id="@+id/ly_recycler_view">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/recview_produtct"/>
+
+        <TextView
+                android:id="@+id/txt_total_price"
+                style="@style/Txt.Emphasize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_minor"
+                tools:text="实付： ￥59"/>
+
+
+    </LinearLayout>
+
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_size"
+            android:background="@color/divider"
+    />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/spacing_major"
+            android:gravity="center_vertical|right"
+    >
+
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_submit_order"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:enabled="true"
+                android:text="再来一单"
+                style="@style/Widget.LazyOrder.Button"
+        />
+
+
+    </LinearLayout>
+
+</LinearLayout>
